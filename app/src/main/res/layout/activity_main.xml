@@ -4,15 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.61"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout2"
+        android:src="@drawable/logo_transparent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/round_bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.39"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/welcome_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/Welcome"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/layout2"
+            app:layout_constraintStart_toStartOf="@id/layout2"
+            app:layout_constraintTop_toTopOf="@id/layout2"/>
+        <Button
+            android:id="@+id/btn"
+            android:background="@drawable/round_button_bg"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ViewCust"
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:elevation="10dp"
+            android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:layout_constraintTop_toBottomOf="@id/welcome_msg"
+            app:layout_constraintStart_toStartOf="@id/layout2"
+            app:layout_constraintEnd_toEndOf="@id/layout2"
+            app:layout_constraintBottom_toBottomOf="@id/layout2"
+            android:layout_marginBottom="40dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
