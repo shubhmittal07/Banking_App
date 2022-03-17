@@ -8,6 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="startClr">#020024</color>
+    <color name="primeLight">#2a2c4c</color>
     <color name="endClr">#393E46</color>
     <color name="otherColor">#00d4ff</color>
+    <color name="moneyColor">#118C4F</color>
+    <color name="grayBack">#c0c0c0</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF5722</color>
+    <color name="grey01">#f5f7fa</color>
+    <color name="grey02">#b8c6db</color>
+    <color name="yellow">#FF9800</color>
 </resources>

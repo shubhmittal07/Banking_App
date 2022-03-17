@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/gradient_background.xml" value="0.164" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/grey_gradient_back.xml" value="0.133" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/round_bg.xml" value="0.164" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/round_button_bg.xml" value="0.1" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/rounded_border.xml" value="0.164" />
-        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_customer_details.xml" value="0.2" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_customers.xml" value="0.2" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.1" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/list_item_cust.xml" value="0.4" />
       </map>
     </option>
   </component>

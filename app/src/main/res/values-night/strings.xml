@@ -2,4 +2,7 @@
 <resources>
     <string name="Welcome">Welcome!</string>
     <string name="ViewCust">View Customers</string>
+    <string name="CustDetail">Customer Detail</string>
+    <string name="AccountNo">Account No.</string>
+    <string name="ifsc">IFSC code:</string>
 </resources>
