@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".CustomerDetails"
+            android:name=".TransactionsActivity"
             android:exported="true"
             android:theme="@style/CustomNoActionBar"/>
+        <activity
+            android:name=".CustomerDetails"
+            android:exported="true"
+            android:theme="@style/CustomNoActionBar" />
         <activity
             android:name=".Customers"
             android:exported="true"

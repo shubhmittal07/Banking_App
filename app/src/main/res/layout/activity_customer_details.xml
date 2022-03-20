@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout01"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grey_gradient_back"
+    android:background="@color/primeLight"
     tools:context=".CustomerDetails">
-
-    <Button
-        android:id="@+id/transferMoney"
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/rounded_border"
-        android:text="Transfer Money"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:backgroundTint="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/balance" />
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_img2"
         android:layout_width="wrap_content"
@@ -36,116 +21,164 @@
         android:layout_marginTop="20dp"
         android:transitionName="trans01"/>
 
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/phoneNo">
-
-        <TableRow>
-
-            <TextView
-                android:padding="3dip"
-                android:text="@string/AccountNo"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/AccNo"
-                android:gravity="right"
-                android:padding="3dip"
-                android:text="XXXXXXXXXXXX1231"
-                android:textColor="@color/red"
-                android:textSize="20dp" />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView
-                android:padding="3dip"
-                android:text="@string/ifsc"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/ifscCode"
-                android:padding="3dip"
-                android:text="ABC09876541"
-                android:textAlignment="center"
-                android:textColor="@color/orange"
-                android:textSize="20dp" />
-        </TableRow>
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/balance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/round_button_bg"
-        android:drawableStart="@drawable/ic_baseline_account_balance_24"
-        android:drawablePadding="5dp"
-        android:padding="5dp"
-        android:text="2000"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
-
-    <TextView
-        android:id="@+id/name"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout02"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:padding="8dp"
-        android:text="Hridyansh Shah"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        app:layout_constraintHeight_percent="0.089"
-        app:layout_constraintTop_toTopOf="@id/guideline1" />
-
-    <TextView
-        android:id="@+id/phoneNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:drawableStart="@drawable/ic_baseline_call_24"
-        android:drawablePadding="5dp"
-        android:drawableTint="@color/primeLight"
-        android:text="6392579668"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/round_bg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transferMoney" />
-
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_baseline_email_24"
-        android:drawablePadding="5dp"
-        android:drawableTint="@color/yellow"
-        android:text="shubhmittal297@gmail.com"
-        android:textAlignment="center"
-        android:textSize="23dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline1">
 
+        <Button
+            android:id="@+id/transferMoney"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/primeLight"
+            android:background="@drawable/round_button_bg"
+            android:text="Transfer Money"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balance" />
+
+        <TableLayout
+            android:id="@+id/table01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/rounded_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneNo">
+
+            <TableRow>
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:padding="3dip"
+                    android:text="@string/AccountNo"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:id="@+id/AccNo"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="XXXXXXXXXXXX1231"
+                    android:textColor="@color/red"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:padding="3dip"
+                    android:text="@string/ifsc"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:background="@color/white"
+                    android:layout_margin="5dp"
+                    android:id="@+id/ifscCode"
+                    android:padding="3dip"
+                    android:text="ABC09876541"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/round_button_bg"
+            android:drawableStart="@drawable/ic_baseline_account_balance_24"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:text="2000"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Hridyansh Shah"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phoneNo"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_call_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/primeLight"
+            android:text="6392579668"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transferMoney" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/yellow"
+            android:text="shubhmittal297@gmail.com"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"/>
+        <Button
+            android:id="@+id/transactionsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="@color/yellow"
+            android:drawableEnd="@drawable/ic_baseline_arrow_circle_right_24"
+            app:layout_constraintTop_toBottomOf="@id/table01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Transactions"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.30" />
+        app:layout_constraintGuide_percent="0.28" />
 </androidx.constraintlayout.widget.ConstraintLayout>

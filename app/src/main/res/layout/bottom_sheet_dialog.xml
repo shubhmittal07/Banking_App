@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
+    <TextView
+        android:id="@+id/transferMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/transferTo"
+        android:textSize="25sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_baseline_person_pin_34"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/transferMsg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editAmount"
+        android:drawableStart="@drawable/ic_baseline_money_24"
+        android:drawableTint="@color/black"
+        android:drawablePadding="10dp"
+        android:hint="@string/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        android:textColor="@color/moneyColor"/>
+    <Button
+        android:id="@+id/transferMoneyD"
+        style="@style/Widget.MaterialComponents.Button"
+        android:textAllCaps="true"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@null"
+        android:background="@color/primeLight"
+        android:text="Transfer Money"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAmount" />
 </androidx.constraintlayout.widget.ConstraintLayout>

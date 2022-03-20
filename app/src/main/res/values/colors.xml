@@ -18,4 +18,6 @@
     <color name="grey01">#f5f7fa</color>
     <color name="grey02">#b8c6db</color>
     <color name="yellow">#FF9800</color>
+    <color name="lightBlue">#3F51B5</color>
+    <color name="green01">#97FA9B</color>
 </resources>

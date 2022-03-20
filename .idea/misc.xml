@@ -3,16 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/btn_ripple_effect.xml" value="0.133" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/button_not_highlight.xml" value="0.133" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/dropdown_bg.xml" value="0.133" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/gradient_background.xml" value="0.164" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/grey_gradient_back.xml" value="0.133" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/ic_baseline_arrow_right_alt_24.xml" value="0.204" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/round_bg.xml" value="0.164" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/round_button_bg.xml" value="0.1" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/rounded_border.xml" value="0.164" />
-        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_customer_details.xml" value="0.2" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/drawable/transaction_item_bg.xml" value="0.144" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_customer_details.xml" value="0.264" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_customers.xml" value="0.2" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.1" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/activity_transactions.xml" value="0.176" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.264" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/dropdown_list_item.xml" value="0.264" />
         <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/list_item_cust.xml" value="0.4" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/layout/transaction_item_layout.xml" value="0.2" />
+        <entry key="..\:/SparksFoundationTasks/BankingApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

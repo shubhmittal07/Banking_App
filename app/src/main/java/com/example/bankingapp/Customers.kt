@@ -31,7 +31,6 @@ class Customers : AppCompatActivity(){
     }
     private fun viewCustomer(){
         val customersList= dbHelper.getCustomers(this)
-        Log.d("DebugTag",customersList.size.toString())
         val adapter = ItemAdapter(this,customersList)
         val rv = binding.recycle01
         rv.adapter = adapter
@@ -48,6 +47,6 @@ class Customers : AppCompatActivity(){
             }
         })
         rv.setHasFixedSize(true)
-        rv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false) as RecyclerView.LayoutManager
+        rv.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL,false)
     }
 }

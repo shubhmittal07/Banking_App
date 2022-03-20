@@ -5,4 +5,20 @@
     <string name="CustDetail">Customer Detail</string>
     <string name="AccountNo">Account No.</string>
     <string name="ifsc">IFSC code:</string>
+    <string name="transferTo">Transfer to</string>
+    <string name="selectPerson">Select the person to transfer money</string>
+    <string name="amount">Amount</string>
+    <string name="success">Success</string>
+    <string-array name="Persons">
+        <item>Shyam Singh</item>
+        <item>Atharva Mittal</item>
+        <item>Hridyansh Shah</item>
+        <item>Akshay Agarwal</item>
+        <item>Rajesh Sharma</item>
+        <item>Shubh Mittal</item>
+        <item>Sparsh Bansal</item>
+        <item>Rajat Garg</item>
+        <item>Ksheetiz Agrahari</item>
+        <item>Tushar Srivastava</item>
+    </string-array>
 </resources>
